@@ -17,7 +17,7 @@
 //     let t=new Date()
 //     let ab1 = document.querySelector("#ab")
 //     let day = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-//     ab1.innerHTML=(day[t.getDay()-2025]);
+//     ab1.innerHTML=(day[t.getDay()]);
 // }
 
 
@@ -33,32 +33,33 @@
 
 
 // let btn=()=>{
-//     let today = new Date();
-//     let ageinp = document.querySelector("#age").value;
-//     let age1 = document.querySelector("#ab");
-//     today.getFullYear() - birthDate.getFullYear();
-//     ageinp = today;
-//     age1.innerHTML=`your age is ${ageinp}`
+//     let ageinp = document.querySelector("#birthday").value;
+//     let age1 = document.querySelector("#age");
+
+//     let current = new Date().getFullYear();
+//     let age2 = current - ageinp;
+//     age1.innerHTML=`your age is ${age2} `;
+    
+// }
+
+
+// let btn=()=>{
+//     let ageinp = document.querySelector("#birthday").value;
+//     let age1 = document.querySelector("#age");
+
+//     let current = new Date();
+//     let age2 = current.getFullYear() - ageinp;
+//     age1.innerHTML=`your age is ${age2}`;
     
 // }
 
 
 
-function calculateAge(birthdate) {
-    let birthDate = new Date(birthdate);
-    let today = new Date();
-    
-    let age = today.getFullYear() - birthDate.getFullYear();
-    let monthDiff = today.getMonth() - birthDate.getMonth();
-    let dayDiff = today.getDate() - birthDate.getDate();
 
-    // Adjust age if birthday hasn't occurred yet this year
-    if (monthDiff < 0 || (monthDiff === 0 && dayDiff < 0)) {
-        age--;
-    }
+// function btn() {
+//     let birthdayYear = document.querySelector("#birthdayYear").value;
+//     let currentYear = new Date().getFullYear();
+//     let age = currentYear - birthdayYear;
 
-    return age;
-}
-
-// Example usage
-console.log(calculateAge("2003-02-15")); // Output: Age based on the current date
+//     document.querySelector("#age").innerHTML = "Your age is: " + age;
+// }
