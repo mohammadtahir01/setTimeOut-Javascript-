@@ -43,15 +43,15 @@
 // }
 
 
-// let btn=()=>{
-//     let ageinp = document.querySelector("#birthday").value;
-//     let age1 = document.querySelector("#age");
+let btn=()=>{
+    let ageinp = document.querySelector("#birthday").value;
+    let age1 = document.querySelector("#age");
 
-//     let current = new Date();
-//     let age2 = current.getFullYear() - ageinp;
-//     age1.innerHTML=`your age is ${age2}`;
+    let current = new Date();
+    let age2 = current.getFullYear() - ageinp;
+    age1.innerHTML=`your age is ${age2}`;
     
-// }
+}
 
 
 
